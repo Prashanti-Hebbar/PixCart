@@ -50,7 +50,7 @@ def main():
             'Gaussian Blur',
             'Reduce noise',
             'Sharping',
-            # 'Affine Transform'  # Optional
+            
         ))
 
         st.write('You selected:', option)
@@ -63,7 +63,7 @@ def main():
             st.image(image, caption="Original Image")
             st.image(edge_detetion(image_cv2), caption="Edge Detected Image")
 
-            # 📘 Explanation Block
+            # Explanation Block
             with st.expander("🔍 What does this filter do?"):
                 st.markdown(filter_info["Edge Detection"])
 
@@ -72,7 +72,7 @@ def main():
             st.image(image, caption="Original Image")
             st.image(gray_scale(image_cv2), caption="Grayscale Image")
 
-            # 📘 Explanation Block
+            # Explanation Block
             with st.expander("🔍 What does this filter do?"):
                 st.markdown(filter_info["Grayscale"])
 
@@ -81,7 +81,7 @@ def main():
             st.image(image, caption="Original Image")
             st.image(neg_trans(image_cv2), caption="Negative Image")
 
-            # 📘 Explanation Block
+            # Explanation Block
             with st.expander("🔍 What does this filter do?"):
                 st.markdown(filter_info["Negative Transformation"])
 
@@ -90,7 +90,7 @@ def main():
             st.image(image, caption="Original Image")
             st.image(gaussian_blur(image_cv2), caption="Blurred Image")
 
-            # 📘 Explanation Block
+            # Explanation Block
             with st.expander("🔍 What does this filter do?"):
                 st.markdown(filter_info["Gaussian Blur"])
 
@@ -99,7 +99,7 @@ def main():
             st.image(image, caption="Original Image")
             st.image(reduce_noise(image_cv2), caption="Denoised Image")
 
-            # 📘 Explanation Block
+            # Explanation Block
             with st.expander("🔍 What does this filter do?"):
                 st.markdown(filter_info["Reduce Noise"])
 
@@ -108,7 +108,7 @@ def main():
             st.image(image, caption="Original Image")
             st.image(sharp_image(image_cv2), caption="Sharpened Image")
 
-            # 📘 Explanation Block
+            # Explanation Block
             with st.expander("🔍 What does this filter do?"):
                 st.markdown(filter_info["Sharping"])
 
