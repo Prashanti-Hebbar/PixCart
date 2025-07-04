@@ -24,9 +24,9 @@ def gray_scale(image):
         gray_image = image
     return Image.fromarray(gray_image)
 
-# Negative Transformation (fixed indentation & conversion)
+# Negative Transformation 
 def neg_trans(image):
-    neg_img = 255 - image  # Simpler and faster way
+    neg_img = 255 - image  
     return Image.fromarray(neg_img)
 
 # Gaussian Blur
